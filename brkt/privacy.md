@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Brkt Privacy Policy
+description: Brkt collects no data. Nothing leaves your device.
 permalink: /brkt/privacy/
 ---
 

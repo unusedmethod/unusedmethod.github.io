@@ -4,24 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ page.title }}</title>
-<style>
-:root { color-scheme: light dark; --bg: #fafafa; --fg: #16181b; --muted: #5b6168; --line: #d8dbdf; --link: #0b5fd0; }
-@media (prefers-color-scheme: dark) { :root { --bg: #16181b; --fg: #e8eaed; --muted: #9aa1a9; --line: #34383d; --link: #7db4ff; } }
-body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, sans-serif; }
-main { max-width: 46rem; margin: 0 auto; padding: 2rem 1rem 4rem; }
-h1 { line-height: 1.2; } h2 { margin-top: 2rem; }
-a { color: var(--link); }
-code { font-size: .9em; overflow-wrap: anywhere; }
-.table { overflow-x: auto; }
-table { border-collapse: collapse; width: 100%; font-size: .92em; }
-th, td { border: 1px solid var(--line); padding: .5rem; text-align: left; vertical-align: top; }
-footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9em; }
-</style>
+<meta name="description" content="{{ page.description | default: 'unusedmethod makes small, finished games.' }}">
+<meta name="theme-color" content="#16181B">
+<link rel="icon" href="/assets/brkt.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-<main>
+<header class="bar">
+  <a class="mark" href="/"><span class="dot"></span>unusedmethod</a>
+  <nav><a href="/#games">Games</a><a href="mailto:unusedmethod@gmail.com">Contact</a></nav>
+</header>
+<main class="{{ page.class | default: 'prose' }}">
 {{ content }}
-<footer><a href="/">unusedmethod</a></footer>
 </main>
+<footer class="foot">
+  <div class="bricks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <p>© 2026 unusedmethod · <a href="/brkt/privacy/">Brkt privacy policy</a> · <a href="mailto:unusedmethod@gmail.com">unusedmethod@gmail.com</a></p>
+</footer>
 </body>
 </html>
