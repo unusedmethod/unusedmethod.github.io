@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }}</title>
+<style>
+:root { color-scheme: light dark; --bg: #fafafa; --fg: #16181b; --muted: #5b6168; --line: #d8dbdf; --link: #0b5fd0; }
+@media (prefers-color-scheme: dark) { :root { --bg: #16181b; --fg: #e8eaed; --muted: #9aa1a9; --line: #34383d; --link: #7db4ff; } }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, sans-serif; }
+main { max-width: 46rem; margin: 0 auto; padding: 2rem 1rem 4rem; }
+h1 { line-height: 1.2; } h2 { margin-top: 2rem; }
+a { color: var(--link); }
+code { font-size: .9em; overflow-wrap: anywhere; }
+.table { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: .92em; }
+th, td { border: 1px solid var(--line); padding: .5rem; text-align: left; vertical-align: top; }
+footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9em; }
+</style>
+</head>
+<body>
+<main>
+{{ content }}
+<footer><a href="/">unusedmethod</a></footer>
+</main>
+</body>
+</html>
